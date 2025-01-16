@@ -9,6 +9,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.6"
+    "@astrojs/react": "^4.1.4",
+    "@astrojs/tailwind": "^5.1.4",
+    "@fontsource/inter": "^5.1.1",
+    "@react-three/fiber": "^8.17.12",
+    "@types/react": "^19.0.6",
+    "@types/react-dom": "^19.0.3",
+    "@types/three": "^0.172.0",
+    "astro": "^5.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.9"
   }
 }
