@@ -28,7 +28,7 @@ export default function Scene() {
         const timer = new Date() - startTime;
         setGimPosition([
           0,
-          -(1 + Math.exp(-timer * 0.002) * 2) * // Fancy math function for bounce in
+          -(1 + Math.exp(-timer * 0.004) * 1) * // Fancy math function for bounce in
             Math.cos(-timer * 0.003) * // Bounce period
             0.2 -
             0.5,
@@ -54,7 +54,7 @@ export default function Scene() {
       </div>
 
       <div
-        className="-mt-28"
+        className="-mt-24"
         style={{ opacity: gimOpacity, width: 600, height: 600 }}
       >
         <Canvas
