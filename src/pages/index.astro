@@ -1,8 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import BigBanner from '../components/index.jsx';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import BigBanner from '../components/LandingHero.jsx';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout>
-  <BigBanner client:load />
-</Layout>
+<BaseLayout>
+  <div class="min-h-screen">
+    <BigBanner client:load />
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  body {
+    @apply relative h-full;
+  }
+</style>
