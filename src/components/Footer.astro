@@ -17,13 +17,19 @@ import { buttonVariants } from './ui/button';
           class={buttonVariants({ variant: 'outline', size: 'icon' })}
           href="https://github.com/mit-gdg"
         >
-          <Icon name="lucide:github" class="" />
+          <Icon name="lucide:github" />
         </a>
         <a
           class={buttonVariants({ variant: 'outline', size: 'icon' })}
           href="https://discord.com/invite/AadahPesme"
         >
-          <Icon name="simple-icons:discord" class="" />
+          <Icon name="simple-icons:discord" />
+        </a>
+        <a
+          class={buttonVariants({ variant: 'outline', size: 'icon' })}
+          href="https://mit-gdg.itch.io"
+        >
+          <Icon name="simple-icons:itchdotio" />
         </a>
       </div>
     </div>
@@ -46,6 +52,6 @@ import { buttonVariants } from './ui/button';
 
 <style>
   p a {
-    @apply text-muted dark:text-muted-dark underline;
+    @apply text-muted underline dark:text-muted-dark;
   }
 </style>
