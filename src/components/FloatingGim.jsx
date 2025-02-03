@@ -63,42 +63,22 @@ export default function Scene() {
   }, []);
 
   return (
-    <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-4 overflow-hidden px-6 pt-20 md:min-h-screen md:flex-row dark:bg-neutral-900 dark:text-white">
-      {/* Intro text */}
-      <div className="relative cursor-default md:max-w-md">
-        <h1 className="z-20 mb-4 text-5xl font-black leading-[0.9em] tracking-tighter md:text-7xl">
-          MIT GAME DEVELOPERS GUILD
-        </h1>
-        <p>
-          we meet in 2-135 from 7 to 9 pm on fridays. come hang out and build
-          games with us! sometimes we have snacks too.
-        </p>
+    <Canvas
+      camera={{
+        position: [20, 12, 25],
+        zoom: 1.8,
+        fov: 20,
+      }}
+      style={{ opacity: gimOpacity }}
+    >
+      <directionalLight position={[2, 2, 2]} intensity={4} />
+      <directionalLight position={[0, 1, 0]} intensity={2} />
 
-        <a href="https://github.com/mit-gdg"></a>
-      </div>
+      <mesh position={gimPosition}>
+        {scene && <primitive object={scene} />}
+      </mesh>
 
-      {/* Gim!! */}
-      <div
-        className="-my-16 -ml-10 -mr-16 h-96 w-96 shrink-0"
-        style={{ opacity: gimOpacity }}
-      >
-        <Canvas
-          camera={{
-            position: [20, 12, 25],
-            zoom: 1.8,
-            fov: 20,
-          }}
-        >
-          <directionalLight position={[2, 2, 2]} intensity={4} />
-          <directionalLight position={[0, 1, 0]} intensity={2} />
-
-          <mesh position={gimPosition}>
-            {scene && <primitive object={scene} />}
-          </mesh>
-
-          {/* <OrbitControls zoomSpeed={0.5} /> */}
-        </Canvas>
-      </div>
-    </div>
+      {/* <OrbitControls zoomSpeed={0.5} /> */}
+    </Canvas>
   );
 }

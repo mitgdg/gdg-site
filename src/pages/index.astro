@@ -1,17 +1,39 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-import LandingHero from '../components/LandingHero.jsx';
+import FloatingGim from '../components/FloatingGim.jsx';
 import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout>
-  <div class="min-h-screen">
-    <LandingHero client:load />
-  </div>
+  <div class="md:min-h-screen">
+    <div
+      class="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-4 overflow-hidden px-6 pb-12 pt-20 md:min-h-screen md:flex-row dark:bg-neutral-900 dark:text-white"
+    >
+      {/* Intro text */}
+      <div class="relative cursor-default md:max-w-md">
+        <h1
+          class="z-20 mb-4 text-5xl font-black leading-[0.9em] tracking-tighter md:text-7xl"
+        >
+          MIT GAME DEVELOPERS GUILD
+        </h1>
+        <p>
+          we meet in 2-135 from 7 to 9 pm on fridays. come hang out and build
+          games with us! sometimes we have snacks too.
+        </p>
 
-  <Footer />
+        <a href="https://github.com/mit-gdg"></a>
+      </div>
+
+      {/* Gim!! */}
+      <div class="-my-10 -ml-10 -mr-16 h-96 w-96 shrink-0">
+        <FloatingGim client:load />
+      </div>
+    </div>
+  </div>
 </BaseLayout>
+
+<Footer />
 
 <style>
   body {
