@@ -1,8 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 
-import FloatingGim from '../components/FloatingGim.jsx';
-import Footer from '../components/Footer.astro';
+import FloatingGim from '@/components/FloatingGim.jsx';
+import Footer from '@/components/Footer.astro';
+
+import { Icon } from 'astro-icon/components';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 ---
 
 <BaseLayout>
@@ -11,18 +15,27 @@ import Footer from '../components/Footer.astro';
       class="relative mx-auto flex w-full max-w-6xl flex-col-reverse items-center justify-center gap-x-4 gap-y-12 overflow-hidden px-6 pt-20 md:min-h-screen md:flex-row dark:bg-neutral-900 dark:text-white"
     >
       {/* Intro text */}
-      <div class="relative cursor-default md:max-w-md">
+      <div class="relative flex cursor-default flex-col md:max-w-lg">
         <h1
           class="z-20 mb-4 text-5xl font-black leading-[0.9em] tracking-tighter md:text-7xl"
         >
           MIT GAME DEVELOPERS GUILD
         </h1>
         <p>
-          we meet in 2-135 from 7 to 9 pm on fridays. come hang out and build
-          games with us! sometimes we have snacks too.
+          We meet in 2-135 from 7 to 9 pm on Fridays. Come hang out and build
+          games! Sometimes we have snacks too.
         </p>
 
-        <a href="https://github.com/mit-gdg"></a>
+        <a
+          class={cn(
+            buttonVariants({ variant: 'outline', size: 'lg' }),
+            'mt-4 bg-blue-600 dark:bg-blue-700 text-white hover:shadow-lg shadow-blue-400 dark:shadow-blue-900 border-none flex self-start gap-3 uppercase font-black h-12'
+          )}
+          href="https://discord.com/invite/AadahPesme"
+        >
+          <Icon name="simple-icons:discord" />
+          <span>Join the Discord</span>
+        </a>
       </div>
 
       {/* Gim!! */}

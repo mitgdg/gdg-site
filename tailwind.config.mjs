@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ['class'],
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     extend: {
@@ -8,12 +7,14 @@ export default {
         sans: ['Inter', 'sans-serif'],
       },
       boxShadow: {
-        sm: '3px 3px var(--tw-shadow-color, #80808080)',
-        DEFAULT: '10px 10px var(--tw-shadow-color)',
+        sm: '3px 3px var(--tw-shadow-color, #40404080)',
+        md: '5px 5px var(--tw-shadow-color, #40404080)',
+        DEFAULT: '5px 5px var(--tw-shadow-color, #40404080)',
+        lg: '8px 8px var(--tw-shadow-color, #40404080)',
       },
       colors: {
         muted: {
-          DEFAULT: '#262626',
+          DEFAULT: '#737373',
           dark: '#d4d4d4',
         },
       },
