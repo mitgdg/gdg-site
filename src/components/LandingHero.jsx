@@ -21,7 +21,7 @@ export default function Scene() {
       setScene(gltf.scene);
 
       const fadeInDuration = 200;
-      const rotationLerpFactor = 0.01;
+      const rotationLerpFactor = 0.05;
       let lookAtX = 0;
       let lookAtY = 0;
 
@@ -63,7 +63,7 @@ export default function Scene() {
   }, []);
 
   return (
-    <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-4 overflow-hidden px-6 pt-20 md:min-h-screen md:flex-row">
+    <div className="relative mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-4 overflow-hidden px-6 pt-20 md:min-h-screen md:flex-row dark:bg-neutral-900 dark:text-white">
       {/* Intro text */}
       <div className="relative cursor-default md:max-w-md">
         <h1 className="z-20 mb-4 text-5xl font-black leading-[0.9em] tracking-tighter md:text-7xl">
@@ -79,8 +79,8 @@ export default function Scene() {
 
       {/* Gim!! */}
       <div
-        className="-my-16 -ml-10 -mr-16 shrink-0"
-        style={{ opacity: gimOpacity, width: 600, height: 600 }}
+        className="-my-16 -ml-10 -mr-16 h-96 w-96 shrink-0"
+        style={{ opacity: gimOpacity }}
       >
         <Canvas
           camera={{

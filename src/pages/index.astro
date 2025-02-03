@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-import BigBanner from '../components/LandingHero.jsx';
+import LandingHero from '../components/LandingHero.jsx';
 import Footer from '../components/Footer.astro';
 ---
 
 <BaseLayout>
   <div class="min-h-screen">
-    <BigBanner client:load />
+    <LandingHero client:load />
   </div>
 
   <Footer />
@@ -15,6 +15,6 @@ import Footer from '../components/Footer.astro';
 
 <style>
   body {
-    @apply relative h-full;
+    @apply relative h-full dark:bg-black;
   }
 </style>
