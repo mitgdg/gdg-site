@@ -11,7 +11,9 @@
   "dependencies": {
     "@astrojs/react": "^4.2.0",
     "@astrojs/tailwind": "^6.0.0",
+    "@fontsource/inconsolata": "^5.1.1",
     "@fontsource/inter": "^5.1.1",
+    "@fontsource/press-start-2p": "^5.1.1",
     "@iconify-json/simple-icons": "^1.2.23",
     "@radix-ui/react-slot": "^1.1.1",
     "@react-three/drei": "^9.121.4",
@@ -38,5 +40,11 @@
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.9"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }

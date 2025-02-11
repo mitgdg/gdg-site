@@ -10,14 +10,16 @@ import { cn } from '@/lib/utils';
 ---
 
 <BaseLayout>
-  <div class="flex min-h-screen items-center">
+  <div
+    class="flex min-h-screen items-center font-mono leading-tight tracking-wide"
+  >
     <div
-      class="relative mx-auto flex w-full max-w-6xl flex-col-reverse items-center justify-center gap-x-4 gap-y-12 overflow-hidden px-6 pt-20 md:min-h-screen md:flex-row dark:bg-neutral-900 dark:text-white"
+      class="relative mx-auto flex w-full max-w-3xl flex-col-reverse items-center justify-center gap-x-4 gap-y-12 px-6 pt-20 md:min-h-screen md:flex-row dark:text-white"
     >
       {/* Intro text */}
       <div class="relative flex cursor-default flex-col md:max-w-lg">
         <h1
-          class="z-20 mb-4 text-5xl font-black leading-[0.9em] tracking-tighter md:text-7xl"
+          class="z-20 mb-4 font-pixel text-5xl font-black leading-[0.9em] tracking-tighter md:text-5xl"
         >
           MIT GAME DEVELOPERS GUILD
         </h1>
@@ -28,8 +30,8 @@ import { cn } from '@/lib/utils';
 
         <a
           class={cn(
-            buttonVariants({ variant: 'outline', size: 'lg' }),
-            'mt-4 bg-blue-600 dark:bg-blue-700 text-white hover:shadow-lg shadow-blue-400 dark:shadow-blue-900 border-none flex self-start gap-3 uppercase font-black h-12'
+            buttonVariants({ variant: 'primary', size: 'lg' }),
+            'mt-4 h-12'
           )}
           href="https://discord.com/invite/AadahPesme"
         >
@@ -44,12 +46,50 @@ import { cn } from '@/lib/utils';
       </div>
     </div>
   </div>
-</BaseLayout>
 
-<Footer />
+  <div
+    class="flex min-h-96 justify-center border-t dark:border-neutral-700 dark:text-white"
+  >
+    <div class="mx-auto w-full max-w-3xl px-6 py-20">
+      <h1 class="font-pixel text-3xl font-black uppercase">Officers</h1>
+      <div class="flex gap-8"></div>
+    </div>
+  </div>
+
+  <Footer />
+</BaseLayout>
 
 <style>
   body {
-    @apply relative h-full dark:bg-black;
+    @apply relative h-full dark:bg-neutral-900;
+    font-size: 110%;
+
+    /* Add a little scrolling grid of dots :) */
+    background-size: 40px 40px;
+    animation: moveBackground 6s linear infinite;
+    background-image: radial-gradient(
+      circle,
+      #00000040 1px,
+      rgba(0, 0, 0, 0) 1px
+    );
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-image: radial-gradient(
+        circle,
+        #ffffff40 1px,
+        rgba(0, 0, 0, 0) 1px
+      );
+    }
+  }
+
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
   }
 </style>

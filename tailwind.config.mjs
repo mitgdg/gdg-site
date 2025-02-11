@@ -5,6 +5,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        mono: ['Inconsolata', 'monospace'],
+        pixel: ['"Press Start 2P"', 'monospace'],
       },
       boxShadow: {
         sm: '3px 3px var(--tw-shadow-color, #40404080)',
