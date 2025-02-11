@@ -5,7 +5,7 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-neutral-300',
+  'inline-flex items-center justify-center gap-2 tracking-widest whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-neutral-300',
   {
     variants: {
       variant: {
@@ -14,7 +14,7 @@ const buttonVariants = cva(
         destructive:
           'bg-red-500 text-neutral-50 transition-shadow hover:bg-red-500/90 hover:shadow-sm dark:bg-red-900 dark:text-neutral-50 dark:hover:bg-red-900/90',
         primary:
-          'border-none flex self-start gap-3 bg-blue-600 text-white font-black uppercase shadow-sm shadow-blue-400 transition-all hover:shadow-lg dark:bg-blue-700 dark:shadow-blue-900 dark:hover:bg-blue-500',
+          'border-none flex self-start gap-3 bg-blue-600 text-white font-black uppercase shadow-sm shadow-blue-400 transition-all hover:shadow-lg hover:bg-blue-500 dark:bg-blue-700 dark:shadow-blue-900 dark:hover:bg-blue-500',
         outline:
           'border border-neutral-400 shadow-neutral-200 shadow-sm transition-all hover:shadow hover:shadow-md hover:shadow-neutral-400 dark:border-neutral-800 dark:text-neutral-300 dark:shadow-neutral-800 dark:hover:bg-neutral-200 dark:hover:shadow-neutral-500 dark:hover:text-neutral-900 dark:hover:border-neutral-200',
         secondary:
