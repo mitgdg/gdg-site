@@ -16,7 +16,7 @@ export default {
       },
       colors: {
         muted: {
-          DEFAULT: '#737373',
+          DEFAULT: '#7f7f7f',
           dark: '#d4d4d4',
         },
       },

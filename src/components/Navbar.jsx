@@ -16,6 +16,7 @@ export default function Navbar() {
           </div>
         </a>
         <NavItemLink href="/the-game">The Game</NavItemLink>
+        <NavItemLink href="/officers">Officers</NavItemLink>
       </ul>
     </div>
   );
@@ -25,7 +26,10 @@ function NavItemLink({ children, href }) {
   return (
     <li>
       <a
-        className={cn(buttonVariants({ variant: 'ghost' }), 'font-black')}
+        className={cn(
+          buttonVariants({ variant: 'ghost' }),
+          'font-medium tracking-tight',
+        )}
         href={href}
       >
         {children}
