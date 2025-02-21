@@ -1,0 +1,30 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout>
+  <div class="prose w-full max-w-2xl pt-12 px-4 pb-12 tracking-tight">
+    <slot />
+  </div>
+
+  <style is:global>
+    .prose h1 {
+      @apply mb-2 mt-4 text-4xl font-black;
+    }
+    .prose h2 {
+      @apply mb-2 mt-4 text-2xl font-bold;
+    }
+    .prose h3 {
+      @apply mb-2 mt-4 text-xl font-bold;
+    }
+    .prose p {
+      @apply my-2;
+    }
+    .prose a {
+      @apply text-blue-500 underline;
+    }
+    .prose li {
+      @apply ml-6 list-disc pl-2;
+    }
+  </style>
+</BaseLayout>

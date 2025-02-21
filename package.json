@@ -15,6 +15,7 @@
     "@fontsource/inter": "^5.1.1",
     "@fontsource/press-start-2p": "^5.1.1",
     "@iconify-json/simple-icons": "^1.2.23",
+    "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.1",
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.12",

@@ -7,6 +7,9 @@ import '@fontsource/inconsolata';
 import '@fontsource/inconsolata/900.css';
 
 import '@/styles/globals.css';
+
+import Navbar from '@/components/Navbar.jsx';
+import Footer from '@/components/Footer.astro';
 ---
 
 <!doctype html>
@@ -18,8 +21,14 @@ import '@/styles/globals.css';
     <title>MIT GDG</title>
   </head>
 
-  <body>
-    <slot />
+  <body
+    class="font-mono leading-tight tracking-wide w-full min-h-screen flex flex-col"
+  >
+    <Navbar client:load />
+    <div class="grow flex flex-col items-center">
+      <slot />
+    </div>
+    <Footer />
   </body>
 </html>
 
@@ -28,5 +37,6 @@ import '@/styles/globals.css';
   body {
     margin: 0;
     width: 100%;
+    @apply relative font-mono dark:bg-neutral-900 dark:text-white;
   }
 </style>
