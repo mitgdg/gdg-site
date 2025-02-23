@@ -16,6 +16,7 @@ export default function Navbar() {
           </div>
         </a>
         <NavItemLink href="/the-game">The Game</NavItemLink>
+        <NavItemLink href="/style-guide">Style Guide</NavItemLink>
         <NavItemLink href="/officers">Officers</NavItemLink>
       </ul>
     </div>
