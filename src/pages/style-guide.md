@@ -9,14 +9,14 @@ This page is a compilation of guidelines and tips for maintaining a consistent a
 - **Use a limited color palette.** Too many colors in one sprite can make it look muddy, uncannily smooth, and inconsistent. There is no set limit for a palette size, but generally more than 16 colors for a single sprite is too many. You can use Aseprite's palette feature to track your colors and `Shift + R` to replace all instances of a color in a sprite.
 
 <p align="center">
-  <img src="public/style-guide/few_colors.png" />
+  <img src="/style-guide/few_colors.png" />
 </p>
 <br>
 
 - **Lighter colors should have a hue closer to red, lower saturation, and higher value/brightness.** The inverse is true for darker colors (their hue should be closer to violet). This method of generating a palette isn't always what a sprite needs, but generally leads to warmer and more natural colors.
 
 <p align="center">
-  <img src="public/style-guide/hsv.png" />
+  <img src="/style-guide/hsv.png" />
 </p>
 <br>
 
@@ -24,7 +24,7 @@ This page is a compilation of guidelines and tips for maintaining a consistent a
 
 
 <p align="center">
-  <img src="public/style-guide/outlines.png" />
+  <img src="/style-guide/outlines.png" />
 </p>
 <br>
 
