@@ -1,8 +1,13 @@
 ---
 layout: '@/layouts/ArticleLayout.astro'
 ---
+We're making a big game throughout this school year! You're a time-travelling cat on the MIT campus. Solve little puzzles, unlock lore about... rats? ...and defeat (or save) the rats???
 
-<i>copied from <a href="https://docs.google.com/document/d/18VdDZ2JS6ZWPE30EuyVCmnX8UbxfnrBmV3n7J5d_mT8/edit?tab=t.0">this google doc</a></i>
+We're actively searching for artists (visual + sound)! Please message in our Discord server if you'd be down to help with anything :)
+
+==
+
+<i>the below (CONTAINS SPOILERS) is copied from <a href="https://docs.google.com/document/d/18VdDZ2JS6ZWPE30EuyVCmnX8UbxfnrBmV3n7J5d_mT8/edit?tab=t.0">this google doc</a></i>
 
 # gdg big game planning \<3
 
