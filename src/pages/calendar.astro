@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Button, buttonVariants } from '@/components/ui/button';
+---
+
+<BaseLayout>
+  <div class="w-full max-w-3xl pb-20 pt-6">
+    <h1 class="mb-4 mt-4 text-4xl font-black">Calendar</h1>
+    <p class="mb-4">
+      <a
+        class={buttonVariants()}
+        href="https://calendar.google.com/calendar/u/6?cid=bWl0Z2FtZWRldmd1aWxkQGdtYWlsLmNvbQ"
+        >Add to your calendar</a
+      >
+    </p>
+    <iframe
+      class="w-full"
+      src="https://calendar.google.com/calendar/embed?src=mitgamedevguild%40gmail.com&ctz=America%2FNew_York"
+      style="border: 0"
+      height="600"></iframe>
+  </div>
+</BaseLayout>

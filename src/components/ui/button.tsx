@@ -5,12 +5,12 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex self-start items-center justify-center gap-2 tracking-widest whitespace-nowrap text-sm font-black transition-all focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-neutral-300 tracking-snug',
+  'inline-flex self-start items-center justify-center gap-2 whitespace-nowrap text-sm font-black transition-all focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-neutral-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-neutral-300 tracking-snug',
   {
     variants: {
       variant: {
         default:
-          'bg-neutral-200 text-black shadow-sm hover:bg-neutral-900 hover:text-white hover:shadow-lg dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-50/90 dark:hover:text-black',
+          'bg-neutral-100 text-black shadow-sm hover:bg-neutral-900 hover:text-white hover:shadow-lg dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-50/90 dark:hover:text-black',
         destructive:
           'bg-red-500 text-neutral-50 transition-shadow hover:bg-red-500/90 hover:shadow-sm dark:bg-red-900 dark:text-neutral-50 dark:hover:bg-red-900/90',
         primary:

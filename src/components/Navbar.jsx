@@ -18,6 +18,7 @@ export default function Navbar() {
         <NavItemLink href="/the-game">The Game</NavItemLink>
         <NavItemLink href="/style-guide">Style Guide</NavItemLink>
         <NavItemLink href="/officers">Officers</NavItemLink>
+        <NavItemLink href="/calendar">Calendar</NavItemLink>
       </ul>
     </div>
   );
@@ -29,7 +30,7 @@ function NavItemLink({ children, href }) {
       <a
         className={cn(
           buttonVariants({ variant: 'ghost' }),
-          'font-medium tracking-tight',
+          'px-3 py-2 text-lg font-medium tracking-tight',
         )}
         href={href}
       >
