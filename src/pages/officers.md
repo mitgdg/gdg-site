@@ -2,7 +2,7 @@
 layout: '@/layouts/ArticleLayout.astro'
 ---
 
-<i class="text-muted">this page will probably get moved to the homepage but i'm keeping it here for now for the purposes of making the navbar look fuller</i>
+*last updated: fall 2025*
 
 # Officers (5)
 

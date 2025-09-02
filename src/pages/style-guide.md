@@ -3,6 +3,9 @@ layout: '@/layouts/ArticleLayout.astro'
 ---
 
 # style guide
+
+*last updated: fall 2025*
+
 This page is a compilation of guidelines and tips for maintaining a consistent artstyle in GDG's team projects. This style guide is currently focused on our WIP pixel art game, but will be updated as more projects are made!
 
 ## tips for pixel art
