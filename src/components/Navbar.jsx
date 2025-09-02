@@ -15,8 +15,8 @@ export default function Navbar() {
             GDG
           </div>
         </a>
-        <NavItemLink href="/the-game">The Game</NavItemLink>
-        <NavItemLink href="/style-guide">Style Guide</NavItemLink>
+        {/* <NavItemLink href="/the-game">The Game</NavItemLink>
+        <NavItemLink href="/style-guide">Style Guide</NavItemLink> */}
         <NavItemLink href="/officers">Officers</NavItemLink>
         <NavItemLink href="/calendar">Calendar</NavItemLink>
       </ul>
