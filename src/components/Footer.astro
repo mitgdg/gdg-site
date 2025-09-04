@@ -3,6 +3,16 @@ import { Icon } from 'astro-icon/components';
 import { buttonVariants } from './ui/button';
 ---
 
+<script is:inline defer>
+  // Email-deobfuscation
+  const email = atob('Z2RnLWV4ZWNAbWl0LmVkdQ==');
+  window.onload = () => {
+    const linkEl = document.querySelector('#email-link');
+    linkEl.href = `mailto:${email}`;
+    linkEl.innerText = email;
+  };
+</script>
+
 <div class="w-full bg-neutral-50 text-base dark:bg-neutral-950 dark:text-white">
   <div
     class="mx-auto grid max-w-3xl grid-rows-3 gap-4 px-6 py-10 md:grid-cols-3 md:grid-rows-1"
@@ -33,7 +43,7 @@ import { buttonVariants } from './ui/button';
 
     <div>
       <p class="font-bold">Contact</p>
-      <p><a href="mailto:gdg-exec@mit.edu">gdg-exec@mit.edu</a></p>
+      <p><a id="email-link">gdg-exec [at] mit [dot] edu</a></p>
     </div>
 
     <div>
