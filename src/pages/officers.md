@@ -10,4 +10,4 @@ layout: '@/layouts/ArticleLayout.astro'
 - Ash Hong, STUDENT · 2026, Treasurer
 - Eric Alfaro, STUDENT · 2027, Vice-President
 - Julia Fortt, STUDENT · 2026, Secretary
-- William Feng, STUDENT · 2028, Officer
+- William Feng, STUDENT · 2028, Webmaster
