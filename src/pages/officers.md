@@ -2,7 +2,7 @@
 layout: '@/layouts/ArticleLayout.astro'
 ---
 
-*last updated: fall 2025*
+*last updated: spring 2026*
 
 # Officers (5)
 
